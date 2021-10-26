@@ -1,0 +1,159 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/coolvetica\ rg.ttf);
+}
+
+@font-face {
+    font-family: "Louis Georges Café";
+    src: url(../fonts/Louis\ George\ Cafe.ttf);
+}
+
+@font-face {
+    font-family: Upheaval;
+    src: url(../fonts/upheavtt.ttf);
+}
+
+@font-face {
+    font-family: Kremlin;
+    src: url(../fonts/kremlin.ttf);
+}
+
+@font-face {
+    font-family: "Cream Cake";
+    src: url(../fonts/Cream\ Cake.otf);
+}
+
+@font-face {
+    font-family: Romelio;
+    src: url(../fonts/Romelio.ttf);
+}
+
+@font-face {
+    font-family: "Artisual Deco";
+    src: url(../fonts/ArtisualDecoRegular_PERSONAL_USE_ONLY.otf);
+}
+
+@keyframes animLogo {
+    0% {
+        color: white;
+        font-size: 26px;
+    }
+    100% {
+        color: gold;
+        font-size: 34px;
+    }
+}
+
+@keyframes animButton {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+    100% {
+        background-color: #333333;
+        color: gold;
+    }
+}
+
+@keyframes animName {
+    20% {
+        font-family: Upheaval;
+    }
+    40% {
+        font-family: Kremlin;
+    }
+    60% {
+        font-family: "Cream Cake";
+    }
+    80% {
+        font-family: Coolvetica;
+    }
+}
+
+@keyframes animWelcome {
+    100% {
+        opacity: 1;
+    }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-color: #5f5f5f;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+#logo
+{
+    font-family: Coolvetica;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 26px;
+    padding: 10px;
+}
+
+#logo:hover
+{
+    animation: animLogo 1s forwards;
+}
+
+header a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Louis Georges Café";
+    font-weight: 100;
+}
+
+#buttons a
+{
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    padding: 10px;
+}
+
+#buttons a:hover
+{
+    animation: animButton 1s forwards;
+}
+
+#prenom
+{
+    animation: animName 3s infinite;
+    letter-spacing: 5px;
+    font-size: 50px;
+    padding: 20px 40px;
+}
+
+#welcome
+{
+    display: flex;
+    justify-content: flex-start;
+    animation: animWelcome 2s forwards;
+    opacity: 0;
+    width: 60%;
+    height: 15vh;
+    margin: auto;
+}
+
+#intro
+{
+    font-family: "Louis Georges Café";
+    background-color: green;
+}
