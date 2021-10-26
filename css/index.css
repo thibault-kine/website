@@ -1,0 +1,45 @@
+@keyframes animName {
+    20% {
+        font-family: Upheaval;
+    }
+    40% {
+        font-family: Kremlin;
+    }
+    60% {
+        font-family: "Cream Cake";
+    }
+    80% {
+        font-family: Coolvetica;
+    }
+}
+
+@keyframes animWelcome {
+    100% {
+        opacity: 1;
+    }
+}
+
+#prenom
+{
+    animation: animName 3s infinite;
+    letter-spacing: 5px;
+    font-size: 50px;
+    padding: 20px 40px;
+}
+
+#welcome
+{
+    display: flex;
+    justify-content: flex-start;
+    animation: animWelcome 2s forwards;
+    opacity: 0;
+    width: 60%;
+    height: 15vh;
+    margin: auto;
+}
+
+#intro
+{
+    font-family: "Louis Georges Café";
+    background-color: green;
+}

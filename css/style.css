@@ -54,27 +54,6 @@
     }
 }
 
-@keyframes animName {
-    20% {
-        font-family: Upheaval;
-    }
-    40% {
-        font-family: Kremlin;
-    }
-    60% {
-        font-family: "Cream Cake";
-    }
-    80% {
-        font-family: Coolvetica;
-    }
-}
-
-@keyframes animWelcome {
-    100% {
-        opacity: 1;
-    }
-}
-
 *
 {
     margin: 0;
@@ -83,12 +62,21 @@
 
 header
 {
-    background-color: #5f5f5f;
+    background-color: #252525;
     display: flex;
     justify-content: space-between;
     position: sticky;
     top: 0;
     align-items: center;
+}
+
+footer
+{
+    background-color: #252525;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
 }
 
 #logo
@@ -133,27 +121,66 @@ header a
     animation: animButton 1s forwards;
 }
 
-#prenom
+video
 {
-    animation: animName 3s infinite;
-    letter-spacing: 5px;
-    font-size: 50px;
-    padding: 20px 40px;
+    width: 100%;
 }
 
-#welcome
-{
-    display: flex;
-    justify-content: flex-start;
-    animation: animWelcome 2s forwards;
-    opacity: 0;
-    width: 60%;
-    height: 15vh;
-    margin: auto;
-}
-
-#intro
+footer
 {
     font-family: "Louis Georges Café";
-    background-color: green;
+    color: white;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: gold;
+}
+
+footer ul
+{
+    list-style: none;
+}
+
+footer a:hover
+{
+    color: goldenrod;
+}
+
+#contact
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#contactlist
+{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#perso
+{
+    margin-right: 15px;
+}
+
+#ecole
+{
+    margin-left: 15px;
+}
+
+#legal-mentions
+{
+    color: rgb(107, 107, 107);
+    text-align: center;
+    width: 50%;
+    align-self: center;
 }
