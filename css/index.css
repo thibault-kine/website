@@ -30,16 +30,35 @@
 #welcome
 {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     animation: animWelcome 2s forwards;
     opacity: 0;
-    width: 60%;
-    height: 15vh;
+    width: 70%;
+    height: 35vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0)
+    );
+    position: fixed;
+    left: 0;
+    right: 0;
     margin: auto;
+    margin-top: 5%;
 }
 
 #intro
 {
     font-family: "Louis Georges Café";
-    background-color: green;
+    line-height: 30px;
+    padding-left: 30px;
+}
+
+#vid
+{
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        white
+    );
 }
