@@ -1,0 +1,168 @@
+@keyframes animProject {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+body
+{
+    background-color: #979797;
+}
+
+#profile
+{
+    background-image: linear-gradient(
+        to top,
+        white,
+        rgba(0,0,0,0)
+    );
+    padding: 20px;
+    border-radius: 40px;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#profile img
+{
+    width: 100px;
+    border-radius: 80px;
+    border: 10px solid #d6d6d6;
+    display: block;
+    margin: auto;
+}
+
+h1
+{
+    font-family: "Louis Georges Café";
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title
+{
+    font-size: 35px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        white,
+        rgba(0,0,0,0)
+    );
+}
+
+.panel
+{
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 25px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.panel:hover
+{
+    animation: animPanel 1s forwards;
+}
+
+.panel img
+{
+    width: auto;
+    height: 10vh;
+}
+
+.panelimg
+{
+    border-width: 2px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0), 
+      #a3a3a3,
+      rgba(0,0,0,0)
+    )1 50% 1;
+    width: fit-content;
+    padding: 40px 40px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1, .panel a
+{
+    font-family: "Louis Georges Café";
+}
+
+.panel a
+{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+}
+
+.panel p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panel h1
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paneltext
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.projet img
+{
+    height: 150px;
+    width: auto;
+    border-radius: 20px;
+}
+
+.projet
+{
+    justify-content: center;
+}
+
+.projet p
+{
+    text-align: center;
+}
+
+.projet img:hover
+{
+    animation: animProject 1s forwards;
+}
+
+.liens
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nothing
+{
+    color: rgb(104, 104, 104);
+    text-align: center;
+}
