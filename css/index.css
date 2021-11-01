@@ -19,6 +19,24 @@
     }
 }
 
+@keyframes animPanel {
+    0% {
+        background-color: rgba(255,255,255,0.4);
+    }
+    100% {
+        background-color: rgba(255,255,255,0.8);
+    }
+}
+
+@keyframes animLink {
+    0% {
+        padding-left: 0px;
+    }
+    100% {
+        padding-left: 20px;
+    }
+}
+
 #prenom
 {
     animation: animName 3s infinite;
@@ -40,11 +58,12 @@
         rgba(255,255,255,0.8),
         rgba(255,255,255,0)
     );
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     margin-top: 5%;
+    z-index: 0;
 }
 
 #intro
@@ -61,4 +80,74 @@
         transparent,
         white
     );
+    z-index: -2;
+}
+
+.panel
+{
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 25px;
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.panel:hover
+{
+    animation: animPanel 1s forwards;
+}
+
+.panel img
+{
+    width: auto;
+    height: 10vh;
+}
+
+.panelimg
+{
+    border-width: 2px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0,0,0,0), 
+      #a3a3a3,
+      rgba(0,0,0,0)
+    )1 50% 1;
+    width: fit-content;
+    padding: 40px 40px 40px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1, .panel a
+{
+    font-family: "Louis Georges Café";
+}
+
+.panel a
+{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+}
+
+.panel a:hover
+{
+    animation: animLink 1s forwards;
+}
+
+.panel p
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paneltext
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
